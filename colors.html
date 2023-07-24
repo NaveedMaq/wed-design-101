@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+    <style>
+      :root {
+        --main-lightest: hsl(147, 87%, 90%);
+        --main-light: hsl(147, 87%, 75%);
+        --main: hsl(147, 87%, 60%);
+        --main-dark: hsl(147, 87%, 30%);
+        --main-darkest: hsl(147, 87%, 10%);
+
+        --grey-lightest: hsl(200, 35%, 70%);
+        --grey-light: hsl(200, 35%, 40%);
+        --grey: hsl(200, 35%, 30%);
+        --grey-dark: hsl(200, 35%, 10%);
+        --grey-darkest: hsl(200, 35%, 5%);
+
+        --ascent-lightest: hsl(330, 100%, 90%);
+        --ascent-light: hsl(330, 100%, 75%);
+        --ascent: hsl(330, 100%, 50%);
+        --ascent-dark: hsl(330, 100%, 30%);
+        --ascent-darkest: hsl(330, 100%, 20%);
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+      }
+      .container > div {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 24px;
+        /* background-color: grey; */
+      }
+
+      .container {
+        width: 350px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 20px;
+      }
+
+      .el--1 {
+        background-color: var(--main-lightest);
+        color: var(--main-dark);
+      }
+      .el--4 {
+        background-color: var(--main-light);
+        color: var(--main-dark);
+      }
+      .el--7 {
+        background-color: var(--main);
+        color: var(--main-darkest);
+      }
+      .el--10 {
+        background-color: var(--main-dark);
+        color: var(--main-light);
+      }
+      .el--13 {
+        background-color: var(--main-darkest);
+        color: var(--main-light);
+      }
+
+      .el--8 {
+        background-color: var(--ascent);
+        color: var(--ascent-lightest);
+      }
+
+      .el--2 {
+        background-color: var(--ascent-lightest);
+        color: var(--ascent-dark);
+      }
+
+      .el--5 {
+        background-color: var(--ascent-light);
+        color: var(--ascent-darkest);
+      }
+
+      .el--11 {
+        background-color: var(--ascent-dark);
+        color: var(--ascent-lightest);
+      }
+
+      .el--14 {
+        background-color: var(--ascent-darkest);
+        color: var(--ascent-lightest);
+      }
+
+      .el--9 {
+        background-color: var(--grey);
+        color: var(--grey-lightest);
+      }
+
+      .el--3 {
+        background-color: var(--grey-lightest);
+        color: var(--grey-dark);
+      }
+
+      .el--6 {
+        background-color: var(--grey-light);
+        color: var(--grey-darkest);
+      }
+
+      .el--12 {
+        background-color: var(--grey-dark);
+        color: var(--grey-lightest);
+      }
+
+      .el--15 {
+        background-color: var(--grey-darkest);
+        color: var(--grey-lightest);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el--1">1</div>
+      <div class="el--2">2</div>
+      <div class="el--3">3</div>
+      <div class="el--4">4</div>
+      <div class="el--5">5</div>
+      <div class="el--6">6</div>
+      <div class="el--7">7</div>
+      <div class="el--8">8</div>
+      <div class="el--9">9</div>
+      <div class="el--10">10</div>
+      <div class="el--11">11</div>
+      <div class="el--12">12</div>
+      <div class="el--13">13</div>
+      <div class="el--14">14</div>
+      <div class="el--15">15</div>
+    </div>
+  </body>
+</html>
